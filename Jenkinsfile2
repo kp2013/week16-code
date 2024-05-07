@@ -9,7 +9,7 @@ pipeline{
                 sh 'mvn soanr:sonar'
             }
         }
-        stage('all maven commands1'){
+        stage('all maven commands'){
             steps{
                 sh 'mvn clean test compile install package'
             }
